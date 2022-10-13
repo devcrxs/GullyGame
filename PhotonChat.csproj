@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04ab7a89-6453-d00f-9976-139847768a0e}</ProjectGuid>
+    <ProjectGuid>{319804d1-d3c9-4940-b53a-bba6704e099c}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,19 +52,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatOperationCode.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatAppSettings.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatChannel.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatDisconnectCause.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatParameterCode.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\ChannelWellKnownProperties.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\ChatClient.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatAppSettings.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatParameterCode.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatDisconnectCause.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\ChatUserStatus.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatPeer.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChatEventCode.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\ChatState.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Code\ChannelCreationOptions.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Code\IChatClientListener.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatEventCode.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatOperationCode.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatChannel.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChatPeer.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Code\ChannelCreationOptions.cs" />
      <None Include="Assets\Photon\PhotonChat\Code\changes-chat.txt" />
      <None Include="Assets\Photon\PhotonChat\Code\PhotonChat.asmdef" />
  <Reference Include="UnityEngine">
@@ -305,28 +305,28 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
- </Reference>
- <Reference Include="log4netPlastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -674,10 +674,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

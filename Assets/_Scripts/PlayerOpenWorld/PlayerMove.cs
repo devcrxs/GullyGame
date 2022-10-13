@@ -32,7 +32,8 @@ public class PlayerMove : MonoBehaviour
     private Vector3 StopVelocityPlayer()
     {
         Vector3 temp = Vector3.zero;
-        //temp.y =
+        float velocityPlayerY = _playerReferences.Rigidbody.velocity.y;
+        temp.y = velocityPlayerY;
         return temp;
     }
 }

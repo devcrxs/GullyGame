@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1b1d9ba6-9e01-697c-595f-971da8999a6d}</ProjectGuid>
+    <ProjectGuid>{7db36f62-cca5-014a-7631-fb7913d61f0b}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,25 +52,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\PhotonAppSettings.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\SupportLogger.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\FriendInfo.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\AppSettings.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\Extensions.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\WebRpc.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\CustomTypesUnity.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Code\RegionHandler.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\AccountService.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\Extensions.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\WebRpc.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\Region.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\SupportLogger.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\AppSettings.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\FriendInfo.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\PhotonAppSettings.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Code\PhotonPing.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Code\RoomInfo.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\Room.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\AccountService.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Code\CustomTypesUnity.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Code\Unity\Editor\PhotonEditorUtils.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
      <None Include="Assets\Photon\PhotonRealtime\Code\changes-realtime.txt" />
      <None Include="Assets\Photon\PhotonRealtime\Code\PhotonRealtime.asmdef" />
  <Reference Include="UnityEngine">
@@ -311,28 +311,28 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
- </Reference>
- <Reference Include="log4netPlastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -680,10 +680,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

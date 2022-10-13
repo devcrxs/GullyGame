@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{cf941e4f-d9b2-9faa-60b3-a08dcd9060a9}</ProjectGuid>
+    <ProjectGuid>{65104b72-27d0-b2a7-4a16-c909f7057c2e}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -52,23 +52,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbodyView.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PunClasses.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonStreamQueue.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\ServerSettings.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonNetworkPart.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Enums.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonNetwork.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonView.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Utilities\NestedComponentUtilities.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonAnimatorView.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Interfaces\IPunCallbacks.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbody2DView.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Interfaces\IPhotonViewCallbacks.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformViewClassic.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\CustomTypes.cs" />
-     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonHandler.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PunClasses.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbody2DView.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonNetwork.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonView.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonAnimatorView.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\CustomTypes.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonRigidbodyView.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Enums.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Interfaces\IPunCallbacks.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Views\PhotonTransformView.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\ServerSettings.cs" />
+     <Compile Include="Assets\Photon\PhotonUnityNetworking\Code\Utilities\NestedComponentUtilities.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\Code\PhotonUnityNetworking.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -308,28 +308,28 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
- </Reference>
- <Reference Include="log4netPlastic">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
- </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
- <Reference Include="DOTween">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
- </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/PackageCache/com.unity.collab-proxy@1.15.18/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -677,15 +677,15 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/AtmosProyect/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{1b1d9ba6-9e01-697c-595f-971da8999a6d}</Project>
+      <Project>{7db36f62-cca5-014a-7631-fb7913d61f0b}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>

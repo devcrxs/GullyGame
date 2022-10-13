@@ -1,6 +1,13 @@
 using UnityEngine;
 public class RotatePlayer : MonoBehaviour
 {
+    private PlayerReferences _playerReferences;
+
+    private void Start()
+    {
+        _playerReferences = FindObjectOfType<PlayerReferences>();
+    }
+
     private void LateUpdate()
     {
         Rotate();
@@ -8,10 +15,19 @@ public class RotatePlayer : MonoBehaviour
 
     private void Rotate()
     {
-        /*if (joystick.Horizontal != 0 || joystick.Vertical != 0)
+        if (_playerReferences.IsMovingJoystick())
         {
-            transform.LookAt(new Vector3( -joystick.Horizontal + transform.position.x,0,(-joystick.Vertical + transform.position.z)));
+            transform.LookAt(GetDirectionView());
         }
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);*/
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+    }
+
+    private Vector3 GetDirectionView()
+    {
+        Joystick joystick = _playerReferences.Joystick;
+        var tempX = -joystick.Horizontal + transform.position.x;
+        var tempZ = -joystick.Vertical + transform.position.z;
+        Vector3 directionView = new Vector3(tempX, 0, tempZ);
+        return directionView;
     }
 }
