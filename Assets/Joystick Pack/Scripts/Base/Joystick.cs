@@ -25,6 +25,13 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public bool SnapX { get { return snapX; } set { snapX = value; } }
     public bool SnapY { get { return snapY; } set { snapY = value; } }
 
+    public bool IsTouchJoystick
+    {
+        get { return isTouchJoystick; }
+        set { isTouchJoystick = value; }
+    }
+
+    private bool isTouchJoystick;
     [SerializeField] private float handleRange = 1;
     [SerializeField] private float deadZone = 0;
     [SerializeField] private AxisOptions axisOptions = AxisOptions.Both;
@@ -42,6 +49,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     protected virtual void Start()
     {
+        isTouchJoystick = true;
         HandleRange = handleRange;
         DeadZone = deadZone;
         baseRect = GetComponent<RectTransform>();
@@ -59,21 +67,27 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     public virtual void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("on down");
         OnDrag(eventData);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        cam = null;
-        if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
-            cam = canvas.worldCamera;
+        if (isTouchJoystick)
+        {
+            Debug.Log("on drag");
+            cam = null;
+            if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
+                cam = canvas.worldCamera;
 
-        Vector2 position = RectTransformUtility.WorldToScreenPoint(cam, background.position);
-        Vector2 radius = background.sizeDelta / 2;
-        input = (eventData.position - position) / (radius * canvas.scaleFactor);
-        FormatInput();
-        HandleInput(input.magnitude, input.normalized, radius, cam);
-        handle.anchoredPosition = input * radius * handleRange;
+            Vector2 position = RectTransformUtility.WorldToScreenPoint(cam, background.position);
+            Vector2 radius = background.sizeDelta / 2;
+            input = (eventData.position - position) / (radius * canvas.scaleFactor);
+            FormatInput();
+            HandleInput(input.magnitude, input.normalized, radius, cam);
+            handle.anchoredPosition = input * radius * handleRange;
+        }
+        
     }
 
     protected virtual void HandleInput(float magnitude, Vector2 normalised, Vector2 radius, Camera cam)

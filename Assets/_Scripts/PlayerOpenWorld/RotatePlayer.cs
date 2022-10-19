@@ -25,8 +25,9 @@ public class RotatePlayer : MonoBehaviour
     private Vector3 GetDirectionView()
     {
         Joystick joystick = _playerReferences.Joystick;
-        var tempX = -joystick.Horizontal + transform.position.x;
-        var tempZ = -joystick.Vertical + transform.position.z;
+        var position = transform.position;
+        var tempX = -joystick.Horizontal + position.x;
+        var tempZ = -joystick.Vertical + position.z;
         Vector3 directionView = new Vector3(tempX, 0, tempZ);
         return directionView;
     }
