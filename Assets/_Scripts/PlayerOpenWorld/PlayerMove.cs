@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         speedPlayer = GetSpeedFromJoystickMagnitude();
+    }
+
+    private void FixedUpdate()
+    {
         Move();
     }
 
     private void Move()
     {
-        Debug.Log("condition: " + _playerReferences.IsMovingJoystick());
         _playerReferences.Rigidbody.velocity =
             _playerReferences.IsMovingJoystick() ? GetVelocityMove() : StopVelocityPlayer();
     }

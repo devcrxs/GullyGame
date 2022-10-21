@@ -1,0 +1,27 @@
+Using pre-set license
+Built from 'master' branch; Version is '2020.3.36f1 (71f96b79b9f0) revision 7469419'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 11216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.36f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker16
+-projectPath
+C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame
+-logFile
+Logs/AssetImportWorker16.log
+-srvPort
+65098
+Successfully changed project path to: C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame
+C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 2370.01 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.36f1 (71f96b79b9f0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.36f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Crish/OneDrive/Documentos/UnityResources/Proyectos/GullyGame/Assets
+GfxDevice: creating device client; threaded=0

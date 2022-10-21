@@ -1,13 +1,15 @@
+using DG.Tweening;
 using UnityEngine;
 public class RotatePlayer : MonoBehaviour
 {
+    [SerializeField] private Transform spriteDirecctionPlayer;
     private PlayerReferences _playerReferences;
-
+    public float turnSmoothTime = 0.1f;
+    private float turnSmootVelocity;
     private void Start()
     {
         _playerReferences = FindObjectOfType<PlayerReferences>();
     }
-
     private void LateUpdate()
     {
         Rotate();
@@ -17,9 +19,13 @@ public class RotatePlayer : MonoBehaviour
     {
         if (_playerReferences.IsMovingJoystick())
         {
-            transform.LookAt(GetDirectionView());
+            float targetAngle =
+                Mathf.Atan2(-_playerReferences.Joystick.Direction.x, -_playerReferences.Joystick.Direction.y) *
+                Mathf.Rad2Deg;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmootVelocity,
+                turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f,angle,0f);
         }
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
 
     private Vector3 GetDirectionView()
@@ -28,7 +34,7 @@ public class RotatePlayer : MonoBehaviour
         var position = transform.position;
         var tempX = -joystick.Horizontal + position.x;
         var tempZ = -joystick.Vertical + position.z;
-        Vector3 directionView = new Vector3(tempX, 0, tempZ);
+        Vector3 directionView = new Vector3(tempX, -1.09f, tempZ);
         return directionView;
     }
 }

@@ -1,13 +1,25 @@
 using Photon.Pun;
 using Photon.Realtime;
 using Random = UnityEngine.Random;
+public enum TypeRooms
+{
+    Football,
+    Baseball,
+    AmericanFootball,
+    Tennis,
+    Golf,
+    Basketball
+}
 public class MatchmakingManager : MonoBehaviourPunCallbacks
 {
-    private string sceneLoad;
+    public TypeRooms typeRooms;
+    public string roomSearch = "minigame";
+    private string _sceneLoad;
     public string SceneLoad
     {
-        set => sceneLoad = value;
+        set => _sceneLoad = value;
     }
+    
     private void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -22,7 +34,7 @@ public class MatchmakingManager : MonoBehaviourPunCallbacks
 
     private void FindMatchmaking()
     {
-        PhotonNetwork.JoinRandomRoom();
+        PhotonNetwork.JoinRandomRoom(new ExitGames.Client.Photon.Hashtable(){{roomSearch,typeRooms}},2);
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)
@@ -35,6 +47,8 @@ public class MatchmakingManager : MonoBehaviourPunCallbacks
         int randomNameRoom = Random.Range(0, 5000);
         RoomOptions roomOptions = new RoomOptions()
         {
+            CustomRoomPropertiesForLobby = new string[]{roomSearch},
+            CustomRoomProperties = new ExitGames.Client.Photon.Hashtable(){{roomSearch,typeRooms}},
             IsVisible = true,
             IsOpen = true,
             MaxPlayers = 2
@@ -46,7 +60,7 @@ public class MatchmakingManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2 && PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.LoadLevel(sceneLoad);
+            PhotonNetwork.LoadLevel(_sceneLoad);
         }
     }
     public override void OnConnectedToMaster()
